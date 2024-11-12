@@ -45,5 +45,20 @@ Fourth Concept we learn about how create elment in react and how we append in th
         )
         ])
      )
+
+
+  when we want to make siblings then add pass siblings as array of elments.
+
+
+Then I learn about react.render and create root element and appending elemnt in root
+
+Episode 1 Ends with react is a library we can add react in smaller part in a big project
+and when we add something in div id, root then we add something in that div that is being replaced by existing code by the react code.
+
+We can add content on before and after the div that is being seen as it is on page.
+
+
+//That's all Happy Learning with zainy !!
+
   
    
