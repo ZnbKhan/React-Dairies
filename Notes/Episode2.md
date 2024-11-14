@@ -101,8 +101,19 @@ install react dom also
  # npx parcel build entry point (index.html)
  if error then go to package.json and remove "main": "App.js"
 
-dist and parcel can be regenerated so need not push in git
+dist and parcel folder can be regenerated so need not push in git
 we can generate dist and parcel via building it
 
 # BrowserList -- 
   where you can find browser nad their configuration
+
+
+
+<!-- self  -->
+# steps
+- npm init
+- npm install -D parcel
+- npm install react
+- npm install react-dom
+- npx parcel index.html
+
