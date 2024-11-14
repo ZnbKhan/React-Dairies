@@ -1,20 +1,23 @@
 # LAYING THE FOUNDATION
 
 # PART-1
-Excution Command -- npx parcel index.html (create a dev build for us and host is on local host)
-we have diffrent command for development and production
-For Easement we can craete a script so we need not to write "npx parcel index.html" again and again
+- Excution Command -- npx parcel index.html (create a dev build for us and host is on local host)
+   we have diffrent command for development and production
+- For Easement we can craete a script so we need not to write "npx parcel index.html" again and again
 
 # HOW TO CREATE SCRIPT
- we can create script in package.json
- we can create script for starting a project in development mode and production mode as well
+ - we can create script in package.json
+ - we can create script for starting a project in development mode and production mode as well
 
- in script (in package.json)
+ - in script (in package.json)
   use word "start":"parcel index.html"  -- this will start our project in development mode
    in cmd use -- npm run start or (npm start)
 
   use word "build":"parcel build index.html" -- this will build our project and open in production mode
    in cmd use -- npm run build
+   
+
+<!-- ########################################################################### -->   
 
 # PART-2
 - React Element === DOM Elemnts (h1, body, div, ....)
@@ -24,6 +27,10 @@ For Easement we can craete a script so we need not to write "npx parcel index.ht
 - rendering elment
 - const root = ReactDOM.createRoot(document.getElementById("root"))
 - root.render(heading);
+
+
+
+<!-- ########################################################################### -->
 
 # PART-3
 - JSX -- Javascript Syntax (jsx and react is seperate from each other)
@@ -38,6 +45,7 @@ For Easement we can craete a script so we need not to write "npx parcel index.ht
 - single line `<h1> </h1>`  for multiple lines it is mandatory to use wrapper `()`
 
 
+<!-- ########################################################################### -->
 
 # PART-4  1:0:53
 # React Component -- Everything in react is component
@@ -55,7 +63,11 @@ For Easement we can craete a script so we need not to write "npx parcel index.ht
 
 # Component composition -- compositioning one component in another component  
 
+<!-- ########################################################################### -->
+
+
 # PART-5 1:26:41
+- we can put js inside jsx by adding {} inside this we can run any pcs of js.
 
 
 
