@@ -1,0 +1,33 @@
+{
+  "name": "episode-3",
+  "version": "1.0.0",
+  "description": "This is Episode 3 about laying the foundation",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZnbKhan/React-Dairies.git"
+  },
+  "keywords": [
+    "react",
+    "react.js",
+    "learning"
+  ],
+  "author": "zainab khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZnbKhan/React-Dairies/issues"
+  },
+  "homepage": "https://github.com/ZnbKhan/React-Dairies#readme",
+  "devDependencies": {
+    "parcel": "^2.13.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
