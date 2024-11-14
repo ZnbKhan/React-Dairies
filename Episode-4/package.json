@@ -1,0 +1,31 @@
+{
+  "name": "episode-4",
+  "version": "1.0.0",
+  "description": "Episode-4 Talk is chaep show me a code",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZnbKhan/React-Dairies.git"
+  },
+  "author": "zainab khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZnbKhan/React-Dairies/issues"
+  },
+  "homepage": "https://github.com/ZnbKhan/React-Dairies#readme",
+  "devDependencies": {
+    "parcel": "^2.13.0",
+    "process": "^0.11.10"
+  },
+  "browserList": [
+    "last 2 version"
+  ],
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
