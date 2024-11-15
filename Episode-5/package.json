@@ -1,0 +1,30 @@
+{
+  "name": "episode-5",
+  "version": "1.0.0",
+  "description": "Episode 5 Let's get hooked",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"npx parcel index.html",
+    "build":"npx build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZnbKhan/React-Dairies.git"
+  },
+  "author": "zainab khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZnbKhan/React-Dairies/issues"
+  },
+  "homepage": "https://github.com/ZnbKhan/React-Dairies#readme",
+  "devDependencies": {
+    "parcel": "^2.13.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserList":[
+    "last 2 browser version"
+  ]
+}
