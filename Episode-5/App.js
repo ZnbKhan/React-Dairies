@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
 const Header = ()=>{
     return(
@@ -697,7 +697,9 @@ const Body = ()=>{
 
           <div className="res-container">
             {/* restr ocard */}
-            <RestroCard resdata = {resList[0]}/>
+            {
+              resList.map((restaurant)=>(<RestroCard key={restaurant.card.card.info.id} resdata = {restaurant}/>))
+            }
           </div>
         </div>
     )
