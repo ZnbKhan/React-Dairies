@@ -4,8 +4,8 @@
   "description": "Episode 5 Let's get hooked",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"npx parcel index.html",
-    "build":"npx build index.html"
+    "start": "npx parcel index.html",
+    "build": "npx build index.html"
   },
   "repository": {
     "type": "git",
@@ -18,13 +18,14 @@
   },
   "homepage": "https://github.com/ZnbKhan/React-Dairies#readme",
   "devDependencies": {
-    "parcel": "^2.13.0"
+    "parcel": "^2.13.0",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
-  "browserList":[
+  "browserList": [
     "last 2 version"
   ]
 }
