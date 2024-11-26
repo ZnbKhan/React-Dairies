@@ -10,7 +10,6 @@
    -- All are written in same same file and if their is any update then we need to depoly the whole  app
 
    Microservices
-
    ----  ----  ---  ----  ---
    API   AUTH  DB   SMS   UI
 
@@ -21,9 +20,9 @@
  - All these services talk o each other via API
 
    We have different ports where different services are being depolyed.
-   :1234 -- UI
-   :1000 -- BE
-   :3000 -- SMS
+   1. :1234 -- UI
+   2. :1000 -- BE
+   3. :3000 -- SMS
 
 <!-- ########################################################################################## -->
 # PART-2  13:13
@@ -34,6 +33,19 @@
 
 <!-- ########################################################################################### -->
 # PART-3 20:50  
-- 
+- useEffect Hook
+  It's a normal js utlity function
+  imported as a named import from react
+  it takes two arguments
+   1. call back function -- it is being called after components renders
+   2. Dependency Array
+
+  If you want something that is being implemented after the page rendered then use, `useEffect`.
+  `useEffect(()=>{}, [])` 
+
+  How to by pass cors
+   use browser CORS
+
+
 
 
