@@ -1,11 +1,28 @@
 import RestroCard from "./RestroCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import resList from "../utilis/mockData";
 import RestroCard from "./RestroCard";
 
 const Body = ()=>{
 
     const [listofRestaurant, setListofRestaurant] = useState(resList);
+
+    useEffect(()=>{
+        fetchData();
+    }, []);
+
+    // calling API using async await
+    const fetchData = async ()=>{
+        try{
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.4713887&lng=77.5074813&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        const json =  await data.json();
+        console.log(json)
+        }catch(err){
+           console.error("Failed to fetch data:", err);
+        }
+    }
+    
+
     return(
       <div className="body">
         <div className="filters">
