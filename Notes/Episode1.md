@@ -1,18 +1,18 @@
 Here is the story I am telling about which is being taught in episode 1 that is inception.
 Episode start with basic HTML Code
 
-First Concept is Emmet -- Generate bunch of pre code for you
+First Concept is `Emmet` -- Generate bunch of pre code for you
 
-Second Concept is CDN i.e Content Delivery Network 
+Second Concept is `CDN` i.e Content Delivery Network 
   Let me tell you about CDN when your website having Global reach and tries to serve content across globe so, faster delivery of content and services, CDN keeps local copy of content nearer to it's consumer.
 
-Third Concept about cross-origin
+Third Concept about `cross-origin`
   when we want to use resources of other domain then we add crossorigin in our script -- as we add cdn link of react then in script tag there is a cdn link there is cross-origin.
       src="https://unpkg.com/react@18/umd/react.development.js"> 
 
-Fourth Concept we learn about how create elment in react and how we append in the root
+Fourth Concept we learn about how `create elment in react` and how we append in the root
    const heading = React.creatElement() -- take three argument 
-   first -- tag you want to creat
+   first -- tag you want to create
    second -- {} for adding attributes
    third -- content ar child we want to add
  
@@ -52,7 +52,7 @@ Fourth Concept we learn about how create elment in react and how we append in th
 
 Then I learn about react.render and create root element and appending elemnt in root
 
-Episode 1 Ends with react is a library we can add react in smaller part in a big project
+`Episode 1 Ends with react is a library we can add react in smaller part in a big project`
 and when we add something in div id, root then we add something in that div that is being replaced by existing code by the react code.
 
 We can add content on before and after the div that is being seen as it is on page.

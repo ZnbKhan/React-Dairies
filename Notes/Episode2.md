@@ -3,22 +3,24 @@ Episode start with to know about difference between git and git-hub
 Production Code
 
 NPM -- Doesn't stand for Node Package Manager 
-      standard repo for packages, All the libraries and utlity you need comes from npm and npm manages them for you 
+      `standard repo for packages`, All the libraries and utlity you need comes from npm and npm manages them for you 
       Just package manager, manages all the packages we installed in our system and sometime this packages are also known as dependency.
 
 # npm init
+  when we do npm init then we have package.json file.
+
 jest
 
 pacakage.json is an configuration for npm
 sometime called dependency
 Now we have package.json we can install dependecies in our project
 
-Most Important package in our project is "bundler" 
+Most Important package in our project is `bundler` 
 # webpack
 # vite
 # parcel
 these are bundlers, they bundles you app and optimise it, so it can ship to the production
-All bundlers are same do same thing but uses different algorithm
+All bundlers are same and do same thing but uses different algorithm
 
 using parcel 
 get parcel in our app 
@@ -56,7 +58,7 @@ package.json and pacakge-lock.json should be put on git along with your project
 Because if you have these 2 files then you can creat node_modules 
 just do npm install for re-creating for node_modules
 
-# whatever you can regeneatre don't put that on git
+ `whatever you can regeneatre don't put that on git`
 
 # ---------------------------------------------------------------
 # PART 2 -- 1:04:57
@@ -76,7 +78,7 @@ we can install react as a pacakge
 install react dom also
 # npm install react-dom 
 
-<script type="module" src="./App.js"></script> -- added type="module"
+<script type="module" src="./App.js"></script> -- added type="module" so we can use ES6 features like import and export
 
 # parcel
  - Dev Build

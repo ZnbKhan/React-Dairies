@@ -1,4 +1,4 @@
-# CODE IS CHEAP SHOW ME A CODE
+# TALK IS CHEAP SHOW ME A CODE
 
 BUILDING Food Ordering App
 1. Planning

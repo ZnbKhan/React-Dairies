@@ -40,7 +40,7 @@
 - jsx (transpile via (parcel-babel) before it reaches to the jsx engine bcz js engine only understands ecmascripts)
 - React.createElemnt ==> React Elemnt(objects) ==> HTML elemnt when render
 - jsx ==> React.createElments ==> React Elmnt(objects) ==> HTML elmnts when renderd
-- babel is converting jsx to react.create elmnt (babel comes with parcel)
+- `babel` is converting jsx to react.create elmnt (babel comes with parcel)
 - if you want to give attributes then write in camelCase
 - single line `<h1> </h1>`  for multiple lines it is mandatory to use wrapper `()`
 

@@ -9,7 +9,7 @@
 
    -- All are written in same same file and if their is any update then we need to depoly the whole  app
 
-   Microservices
+  Microservices
    ----  ----  ---  ----  ---
    API   AUTH  DB   SMS   UI
 
@@ -17,7 +17,7 @@
    `seperation of concerns and single responsibility project`
 
 # HOW THESE SERVICES INTEREACT WITH EACH OTHER:
- - All these services talk o each other via API
+ - All these services talk o each other via `API`
 
    We have different ports where different services are being depolyed.
    1. :1234 -- UI
@@ -34,7 +34,7 @@
 <!-- ########################################################################################### -->
 # PART-3 20:50  
 - useEffect Hook
-  It's a normal js utlity function
+  `It's a normal js utlity function`
   imported as a named import from react
   it takes two arguments
    1. call back function -- it is being called after components renders
@@ -43,9 +43,17 @@
   If you want something that is being implemented after the page rendered then use, `useEffect`.
   `useEffect(()=>{}, [])` 
 
+
   How to by pass cors
-   use browser CORS
+   use browser CORS 
 
 
+    <script type="module" src="./src/App.js"></script> 
+     type module helps to acess ES6 features like export and import so we should add type as module when we want to use ES6 features.
 
 
+# PART-4
+ `shimmer Ui` resemble the actual UI
+
+# PART-5
+ 

@@ -61,12 +61,12 @@
                    when we call a useState() - it's gives a state variable
                    `const [listOfRestaurant] = useState(we can pass default value here, like [], {}, null);` 
                    -- beaves like normal variable.
-                   -- we can't modify this restaurant for modification we have second parameter in array call `setListofRestaurant()` used to update the list
+                   -- we can't modify this restaurant for modification we have second parameter in array call `setListofRestaurant() used to update the list
                    this is same as `let listOfResstauarnt= [];`
 
-                   whenever a state variable changes react will re-render the component.
+                   `whenever a state variable changes react will re-render the component`.
                    
-                   Core Logic of React -- Re rendring of component
+                   `Core Logic of React -- Re rendring of component`
   
 # THEORY  01:45:11
 
