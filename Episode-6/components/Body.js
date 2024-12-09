@@ -1,11 +1,11 @@
 import RestroCard from "./RestroCard";
 import { useState, useEffect } from "react";
-import resList from "../utilis/mockData";
 import RestroCard from "./RestroCard";
+import Shimmer from "./Shimmer";
 
 const Body = ()=>{
 
-    const [listofRestaurant, setListofRestaurant] = useState(resList);
+    const [listofRestaurant, setListofRestaurant] = useState([]);
 
     useEffect(()=>{
         fetchData();
@@ -16,12 +16,27 @@ const Body = ()=>{
         try{
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.4713887&lng=77.5074813&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json =  await data.json();
-        console.log(json)
+        console.log(json)  //data we got is object we need to have array so we can apply map on it 
+        const restaurant = json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+        console.log(restaurant);
+        
+        // checking whether I got an Array or not
+        if(Array.isArray(restaurant)){
+            setListofRestaurant(restaurant);
+        }else{
+            console.log("Invalid DS: restuarant is not an array")
+            setListofRestaurant([]);
+        }
+        
         }catch(err){
            console.error("Failed to fetch data:", err);
         }
     }
     
+
+    // shimmer Ui
+    if(listofRestaurant.length === 0)
+        return <Shimmer />
 
     return(
       <div className="body">
@@ -29,7 +44,7 @@ const Body = ()=>{
             <button 
             className="filter-btn" 
             onClick={()=>{
-                const filterList = listofRestaurant.filter((res)=> res.card.card.info.avgRating >4)
+                const filterList = listofRestaurant.filter((res)=> res?.info?.avgRating >4)
                 setListofRestaurant(filterList)
             }}
             >
@@ -39,7 +54,7 @@ const Body = ()=>{
 
         <div className="res-container">
             {
-                listofRestaurant.map((restaurant)=>(<RestroCard key={restaurant.card.card.info.id} resdata={restaurant}/>))
+                listofRestaurant.map((res)=>(<RestroCard key={res?.info?.id} resdata={res}/>))
             }
         </div>
       </div>

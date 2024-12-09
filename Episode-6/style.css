@@ -35,6 +35,7 @@
 }
 .res-card{
     padding: 5px;
+    margin: 10px;
     width: 200px;
     height: 350px;
     background: #f5f1f1;
@@ -42,6 +43,7 @@
 
 .res-card  > img{
     height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .res-card:hover{

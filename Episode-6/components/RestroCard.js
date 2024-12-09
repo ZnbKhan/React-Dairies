@@ -10,7 +10,7 @@ const RestroCard = (props) => {
       costForTwo,
       avgRating,
       cloudinaryImageId
-    } = resdata?.card?.card?.info;
+    } = resdata?.info;
     return(
         <div className="res-card">
             <img 
