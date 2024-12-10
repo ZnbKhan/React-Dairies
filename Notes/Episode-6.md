@@ -56,4 +56,14 @@
  `shimmer Ui` resemble the actual UI
 
 # PART-5
- 
+  `consitional rendering` as we do if listofrestro.length == 0 then we return shimmer
+
+  - when we need to make state variable and state variable
+    Building small features and elborate this concept
+    login and logout button
+
+    Explains the importance of state variable (01:16:33)
+   
+# PART-6 1:32:48
+ - Building Search Functionality
+ - Input box concept
