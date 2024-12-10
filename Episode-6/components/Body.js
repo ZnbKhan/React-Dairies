@@ -6,6 +6,9 @@ import Shimmer from "./Shimmer";
 const Body = ()=>{
 
     const [listofRestaurant, setListofRestaurant] = useState([]);
+    const [filterRestaurant, setFilterRestaurant] = useState([]);
+
+    const [serachText, setSearchText] = useState("");
 
     useEffect(()=>{
         fetchData();
@@ -23,6 +26,7 @@ const Body = ()=>{
         // checking whether I got an Array or not
         if(Array.isArray(restaurant)){
             setListofRestaurant(restaurant);
+            setFilterRestaurant(restaurant);
         }else{
             console.log("Invalid DS: restuarant is not an array")
             setListofRestaurant([]);
@@ -35,17 +39,25 @@ const Body = ()=>{
     
 
     // shimmer Ui
-    if(listofRestaurant.length === 0)
-        return <Shimmer />
-
-    return(
+   return listofRestaurant.length === 0 ? (<Shimmer />):
+   (
       <div className="body">
+
         <div className="filters">
+            <div className="search">
+                <input type="text" className="serach-box" value={serachText} onChange={(e)=>{setSearchText(e.target.value)}}/>
+                <button onClick={()=>{
+                    // filter restaurant and and upadte ui
+                    const filteredList = listofRestaurant.filter((res)=>res?.info?.name.toLowerCase().includes(serachText.toLowerCase()));
+                    setSearchText(" ");
+                    setFilterRestaurant(filteredList);
+                  }}>search</button>
+            </div>
             <button 
             className="filter-btn" 
             onClick={()=>{
                 const filterList = listofRestaurant.filter((res)=> res?.info?.avgRating >4)
-                setListofRestaurant(filterList)
+                setFilterRestaurant(filterList)
             }}
             >
             Top Rated Restaurant
@@ -54,7 +66,7 @@ const Body = ()=>{
 
         <div className="res-container">
             {
-                listofRestaurant.map((res)=>(<RestroCard key={res?.info?.id} resdata={res}/>))
+                filterRestaurant.map((res)=>(<RestroCard key={res?.info?.id} resdata={res}/>))
             }
         </div>
       </div>
